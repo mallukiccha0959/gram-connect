@@ -26,11 +26,11 @@ export default function VendorDashboard({
 
   const [products, setProducts] = useState([]);
 
-  const [totalRevenue, setTotalRevenue] = useState(0);
+  // const [totalRevenue, setTotalRevenue] = useState(0);
 
-  const [pendingOrders, setPendingOrders] = useState(0);
+  // const [pendingOrders, setPendingOrders] = useState(0);
 
-  const [deliveredOrders, setDeliveredOrders] = useState(0);
+  // const [deliveredOrders, setDeliveredOrders] = useState(0);
 
   // NEW ANALYTICS STATES
   const [lowStockCount, setLowStockCount] =

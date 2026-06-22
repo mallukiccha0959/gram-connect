@@ -8,8 +8,8 @@ function VendorProducts() {
   const userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
   useEffect(() => {
-    fetchVendorProducts();
-  }, []);
+  fetchVendorProducts();
+}, [fetchVendorProducts]);
 
   const fetchVendorProducts = async () => {
 
