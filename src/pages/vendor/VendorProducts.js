@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 
 function VendorProducts() {
@@ -7,11 +7,7 @@ function VendorProducts() {
 
   const userInfo = JSON.parse(localStorage.getItem("userInfo"));
 
-  useEffect(() => {
-  fetchVendorProducts();
-}, [fetchVendorProducts]);
-
-  const fetchVendorProducts = async () => {
+  const fetchVendorProducts = useCallback(async () => {
 
     try {
 
@@ -32,7 +28,11 @@ function VendorProducts() {
 
     }
 
-  };
+  }, [userInfo.token]);
+
+  useEffect(() => {
+    fetchVendorProducts();
+  }, [fetchVendorProducts]);
 
   const deleteProduct = async (id) => {
 

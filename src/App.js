@@ -8,7 +8,7 @@ import { useState } from "react";
 import Home from "./pages/customer/Home";
 import Products from "./pages/customer/Products";
 import Wishlist from "./pages/customer/Wishlist";
-import Cart from "./pages/customer/Cart";
+// import Cart from "./pages/customer/Cart";
 import ProductDetails from "./pages/customer/ProductDetails";
 import MyOrders from "./pages/customer/MyOrders";
 
