@@ -108,19 +108,19 @@ export default function VendorDashboard({
 
       // FETCH VENDOR ORDERS
       const ordersResponse = await axios.get(
-        "http://localhost:5000/api/orders/vendor-orders",
+        "https://gram-connect-ten.vercel.app/api/orders/vendor-orders",
         config
       );
 
       // FETCH VENDOR PRODUCTS
       const productsResponse = await axios.get(
-        "http://localhost:5000/api/products/vendor-products",
+        "https://gram-connect-ten.vercel.app/api/products/vendor-products",
         config
       );
 
       // STEP 5 — FETCH ANALYTICS
       const analyticsResponse = await axios.get(
-        "http://localhost:5000/api/orders/vendor-analytics",
+        "https://gram-connect-ten.vercel.app/api/orders/vendor-analytics",
         config
       );
 
@@ -270,7 +270,7 @@ export default function VendorDashboard({
       };
 
       await axios.put(
-        `http://localhost:5000/api/orders/${id}/status`,
+        `https://gram-connect-ten.vercel.app/api/orders/${id}/status`,
         { status },
         config
       );
@@ -301,7 +301,7 @@ export default function VendorDashboard({
       };
 
       await axios.delete(
-        `http://localhost:5000/api/products/${id}`,
+        `https://gram-connect-ten.vercel.app/api/products/${id}`,
         config
       );
 
@@ -351,7 +351,7 @@ export default function VendorDashboard({
 
       await axios.put(
 
-        `http://localhost:5000/api/products/${selectedProduct._id}`,
+        `https://gram-connect-ten.vercel.app/api/products/${selectedProduct._id}`,
 
         {
           name: editName,

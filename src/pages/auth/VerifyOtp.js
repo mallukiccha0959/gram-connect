@@ -32,7 +32,7 @@ const VerifyOtp = () => {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/verify-otp",
+        "https://gram-connect-ten.vercel.app/api/auth/verify-otp",
         {
           email,
           otp,

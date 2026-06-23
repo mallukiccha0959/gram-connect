@@ -23,7 +23,7 @@ const ResetPassword = () => {
       setLoading(true);
 
       const res = await axios.post(
-        "http://localhost:5000/api/auth/reset-password",
+        "https://gram-connect-ten.vercel.app/api/auth/reset-password",
         {
           email,
           otp,

@@ -12,7 +12,7 @@ function VendorProducts() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/products/vendor",
+        "https://gram-connect-ten.vercel.app/api/products/vendor",
         {
           headers: {
             Authorization: `Bearer ${userInfo.token}`,
@@ -39,7 +39,7 @@ function VendorProducts() {
     try {
 
       await axios.delete(
-        `http://localhost:5000/api/products/${id}`,
+        `https://gram-connect-ten.vercel.app/api/products/${id}`,
         {
           headers: {
             Authorization: `Bearer ${userInfo.token}`,

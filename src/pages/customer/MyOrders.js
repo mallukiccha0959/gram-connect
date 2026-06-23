@@ -30,7 +30,7 @@ export default function MyOrders() {
 
       const { data } = await axios.get(
 
-        "http://localhost:5000/api/orders/my-orders",
+        "https://gram-connect-ten.vercel.app/api/orders/my-orders",
 
         {
 

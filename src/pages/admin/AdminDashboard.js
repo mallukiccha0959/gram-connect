@@ -83,7 +83,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       const { data } = await axios.get(
-        "http://localhost:5000/api/admin/analytics",
+        "https://gram-connect-ten.vercel.app/api/admin/analytics",
         { headers: { Authorization: `Bearer ${userInfo.token}` } }
       );
       setAnalytics(data);
@@ -96,7 +96,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       const { data } = await axios.get(
-        "http://localhost:5000/api/admin/users",
+        "https://gram-connect-ten.vercel.app/api/admin/users",
         { headers: { Authorization: `Bearer ${userInfo.token}` } }
       );
       setUsers(data);
@@ -114,7 +114,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       const { data } = await axios.get(
-        "http://localhost:5000/api/admin/vendors",
+        "https://gram-connect-ten.vercel.app/api/admin/vendors",
         { headers: { Authorization: `Bearer ${userInfo.token}` } }
       );
       setVendors(data);
@@ -127,7 +127,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       await axios.put(
-        `http://localhost:5000/api/admin/vendors/${id}`,
+        `https://gram-connect-ten.vercel.app/api/admin/vendors/${id}`,
         { status },
         { headers: { Authorization: `Bearer ${userInfo.token}` } }
       );
@@ -142,7 +142,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       await axios.put(
-        `http://localhost:5000/api/admin/users/${id}/status`,
+        `https://gram-connect-ten.vercel.app/api/admin/users/${id}/status`,
         { status },
         {
           headers: {
@@ -160,7 +160,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       const { data } = await axios.get(
-        "http://localhost:5000/api/admin/products",
+        "https://gram-connect-ten.vercel.app/api/admin/products",
         { headers: { Authorization: `Bearer ${userInfo.token}` } }
       );
       setProducts(data);
@@ -173,7 +173,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       const { data } = await axios.get(
-        "http://localhost:5000/api/admin/orders",
+        "https://gram-connect-ten.vercel.app/api/admin/orders",
         { headers: { Authorization: `Bearer ${userInfo.token}` } }
       );
       setOrders(data);
@@ -186,7 +186,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       await axios.put(
-        `http://localhost:5000/api/admin/orders/${id}`,
+        `https://gram-connect-ten.vercel.app/api/admin/orders/${id}`,
         { status },
         { headers: { Authorization: `Bearer ${userInfo.token}` } }
       );
@@ -201,7 +201,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       await axios.put(
-        `http://localhost:5000/api/admin/orders/${orderId}/assign`,
+        `https://gram-connect-ten.vercel.app/api/admin/orders/${orderId}/assign`,
         { deliveryAgentId },
         {
           headers: {
@@ -219,7 +219,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       await axios.delete(
-        `http://localhost:5000/api/admin/products/${id}`,
+        `https://gram-connect-ten.vercel.app/api/admin/products/${id}`,
         { headers: { Authorization: `Bearer ${userInfo.token}` } }
       );
       fetchProducts();
@@ -232,7 +232,7 @@ export default function AdminDashboard({
     try {
       const userInfo = JSON.parse(localStorage.getItem("userInfo"));
       await axios.delete(
-        `http://localhost:5000/api/admin/users/${id}`,
+        `https://gram-connect-ten.vercel.app/api/admin/users/${id}`,
         { headers: { Authorization: `Bearer ${userInfo.token}` } }
       );
       fetchUsers();

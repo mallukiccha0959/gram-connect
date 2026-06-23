@@ -53,7 +53,7 @@ export default function DeliveryDashboard({
       const ordersRes =
         await axios.get(
 
-          "http://localhost:5000/api/delivery/orders",
+          "https://gram-connect-ten.vercel.app/api/delivery/orders",
 
           config
 
@@ -63,7 +63,7 @@ export default function DeliveryDashboard({
       const analyticsRes =
         await axios.get(
 
-          "http://localhost:5000/api/delivery/analytics",
+          "https://gram-connect-ten.vercel.app/api/delivery/analytics",
 
           config
 
@@ -115,7 +115,7 @@ export default function DeliveryDashboard({
 
       await axios.put(
 
-        `http://localhost:5000/api/delivery/orders/${id}/status`,
+        `https://gram-connect-ten.vercel.app/api/delivery/orders/${id}/status`,
 
         { status },
 
@@ -148,7 +148,7 @@ export default function DeliveryDashboard({
 
         await axios.put(
 
-          `http://localhost:5000/api/delivery/orders/${id}/accept`,
+          `https://gram-connect-ten.vercel.app/api/delivery/orders/${id}/accept`,
 
           {},
 
@@ -188,7 +188,7 @@ export default function DeliveryDashboard({
 
         await axios.put(
 
-          `http://localhost:5000/api/delivery/orders/${id}/reject`,
+          `https://gram-connect-ten.vercel.app/api/delivery/orders/${id}/reject`,
 
           {},
 

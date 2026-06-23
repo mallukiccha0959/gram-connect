@@ -83,7 +83,7 @@ export default function VendorOrders() {
 
       const response = await axios.get(
 
-        "http://localhost:5000/api/orders/vendor-orders",
+        "https://gram-connect-ten.vercel.app/api/orders/vendor-orders",
 
         {
 
@@ -148,7 +148,7 @@ export default function VendorOrders() {
 
       await axios.put(
 
-        `http://localhost:5000/api/orders/${id}/status`,
+        `https://gram-connect-ten.vercel.app/api/orders/${id}/status`,
 
         { status },
 

@@ -24,7 +24,7 @@ export default function ProductDetails({
       try {
 
         const res = await axios.get(
-          `http://localhost:5000/api/products/${id}`
+          `https://gram-connect-ten.vercel.app/api/products/${id}`
         );
 
         setProduct(res.data);

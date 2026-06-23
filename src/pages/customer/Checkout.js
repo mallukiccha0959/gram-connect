@@ -37,7 +37,7 @@ export default function Checkout({ cart, setCart }) {
 
       const { data } = await axios.post(
 
-        "http://localhost:5000/api/orders/create-payment-order",
+        "https://gram-connect-ten.vercel.app/api/orders/create-payment-order",
 
         {
           amount: total,
@@ -78,7 +78,7 @@ export default function Checkout({ cart, setCart }) {
 
             await axios.post(
 
-              "http://localhost:5000/api/orders",
+              "https://gram-connect-ten.vercel.app/api/orders",
 
               {
 
@@ -207,7 +207,7 @@ export default function Checkout({ cart, setCart }) {
 
       await axios.post(
 
-        "http://localhost:5000/api/orders",
+        "https://gram-connect-ten.vercel.app/api/orders",
 
         {
 
